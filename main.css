@@ -1,0 +1,270 @@
+.image1 {
+  margin-left: 10%;
+}
+
+.image2 {
+  margin-left: 20%;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  color: darkorange;
+}
+
+.nav {
+  height: 25px;
+  width: 350px;
+  text-align: center;
+}
+
+a:hover {
+  color: darkorange;
+}
+
+a {
+  text-decoration: none;
+  float: left;
+  display: block;
+  padding: 8px;
+  background-color: #dddddd;
+}
+
+body {
+  background-color: lightsteelblue;
+}
+
+section {
+  display: none;
+}
+
+#toggle1 {
+  display: none;
+}
+
+i {
+  margin-left: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav {
+    display: none;
+  }
+
+  section {
+    display: contents;
+  }
+
+  a:hover {
+    color: darkorange;
+  }
+
+  a {
+    text-decoration: none;
+    float: left;
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
+  }
+
+  .p-menu1 {
+    height: 100%;
+  }
+
+  .hamburger1 {
+    height: 45px;
+    margin: 10px;
+    display: -ms-grid;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    z-index: 120;
+  }
+
+  .hamburger1 div {
+    background-color: #3d3d3d;
+    position: relative;
+    width: 20px;
+    height: 5px;
+    margin-top: 7px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+
+  #toggle1 {
+    display: none;
+  }
+
+  #toggle1:checked + .hamburger1 .top {
+    -webkit-transform: rotate(-45deg);
+    -webkit-transform-transform: rotate(-45deg);
+    margin-top: 22.5px;
+  }
+
+  #toggle1:checked + .hamburger1 .meat {
+    -webkit-transform: rotate(45deg);
+    -webkit-transform-transform: rotate(45deg);
+    margin-top: -5px;
+  }
+
+  #toggle1:checked + .hamburger1 .bottom {
+    -webkit-transform: scale(0);
+    -webkit-transform-transform: scale(0);
+  }
+
+  #toggle1:checked ~ .menu1 {
+    height: 340px;
+  }
+
+  .menu1 {
+    width: 100%;
+    background-color: lightgray;
+    margin: 0;
+    display: -ms-grid;
+    display: grid;
+    grid-template-rows: 1fr repeat(4, 0.5fr);
+    grid-row-gap: 25px;
+    padding: 0;
+    list-style: none;
+    clear: both;
+    width: auto;
+    text-align: center;
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.4s ease;
+    z-index: 120;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
+  .menu1 a:first-child {
+    margin-top: 40px;
+  }
+
+  .menu1 a:last-child {
+    margin-bottom: 40px;
+  }
+
+  i {
+    margin-left: 5px;
+  }
+}
+img {
+  margin-left: 20%;
+}
+
+p {
+  text-align: center;
+  color: white;
+}
+
+.flavors {
+  margin-left: 20px;
+}
+
+h3 {
+  text-align: center;
+  color: white;
+  font-family: "Courier New", serif;
+}
+
+.div {
+  display: flex;
+  width: 90%;
+  height: 400px;
+  background-color: darkgrey;
+  margin-top: 100px;
+  margin-left: 4%;
+}
+
+.modal {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  width: 500px;
+  height: 300px;
+  overflow: auto;
+  background-color: lightsteelblue;
+}
+
+.modal-content {
+  font-weight: bold;
+  font-family: "Courier New", serif;
+}
+
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: darkorange;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button {
+  margin-left: 50%;
+  background-color: darkorange;
+  color: white;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+form {
+  margin-top: 100px;
+  margin-left: 40%;
+}
+
+input {
+  width: 300px;
+  height: 20px;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: lightgray;
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+  height: 200px;
+  position: relative;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 10px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  display: block;
+  justify-content: space-evenly;
+  margin-left: 20%;
+  margin-top: 15px;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+/*# sourceMappingURL=main.css.map */
