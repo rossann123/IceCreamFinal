@@ -10,7 +10,7 @@ h2 {
 
 h1 {
   text-align: center;
-  color: darkorange;
+  color: firebrick;
 }
 
 .nav {
@@ -20,7 +20,7 @@ h1 {
 }
 
 a:hover:not(.active) {
-  background-color: darkorange;
+  background-color: firebrick;
   color: white;
 }
 
@@ -63,7 +63,7 @@ i {
   }
 
   a:hover {
-    color: darkorange;
+    color: firebrick;
   }
 
   a {
@@ -169,7 +169,7 @@ h3 {
   display: flex;
   width: 90%;
   height: 400px;
-  background-color: darkorange;
+  background-color: firebrick;
   margin-top: 100px;
   margin-left: 4%;
   border-radius: 18%;
@@ -224,28 +224,28 @@ h3 {
 
 .close:hover,
 .close:focus {
-  color: darkorange;
+  color: firebrick;
   text-decoration: none;
   cursor: pointer;
 }
 
 .close2:hover,
 .close2:focus {
-  color: darkorange;
+  color: firebrick;
   text-decoration: none;
   cursor: pointer;
 }
 
 .close3:hover,
 .close3:focus {
-  color: darkorange;
+  color: firebrick;
   text-decoration: none;
   cursor: pointer;
 }
 
 .close4:hover,
 .close4:focus {
-  color: darkorange;
+  color: firebrick;
   text-decoration: none;
   cursor: pointer;
 }
@@ -273,7 +273,7 @@ input {
 
 .sub {
   color: white;
-  background-color: darkorange;
+  background-color: firebrick;
   border-radius: 40%;
   width: 80px;
   margin-left: 100px;
