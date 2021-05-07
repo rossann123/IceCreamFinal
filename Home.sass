@@ -1,7 +1,8 @@
-.image1
-  margin-left: 10%
-.image2
-  margin-left: 20%
+.image
+  margin-left: auto
+  margin-right: auto
+
+
 h2
   text-align: center
   color: white
@@ -16,8 +17,16 @@ h1
   text-align: center
 
 
-a:hover
-  color: darkorange
+
+a:hover:not(.active)
+  background-color: darkorange
+  color: white
+
+
+.active
+  background-color: white
+  color: black
+
 a
   text-decoration: none
   float: left
@@ -36,6 +45,7 @@ section
 
 i
   margin-left: 5px
+
 @media only screen and (max-width: 600px)
   .nav
     display: none
@@ -68,7 +78,6 @@ i
 
 
   .hamburger1 div
-    background-color: rgb(61, 61, 61)
     position: relative
     width: 20px
     height: 5px

@@ -1,9 +1,6 @@
-.image1 {
-  margin-left: 10%;
-}
-
-.image2 {
-  margin-left: 20%;
+.image {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h2 {
@@ -22,8 +19,14 @@ h1 {
   text-align: center;
 }
 
-a:hover {
-  color: darkorange;
+a:hover:not(.active) {
+  background-color: darkorange;
+  color: white;
+}
+
+.active {
+  background-color: white;
+  color: black;
 }
 
 a {
@@ -86,7 +89,6 @@ i {
   }
 
   .hamburger1 div {
-    background-color: #3d3d3d;
     position: relative;
     width: 20px;
     height: 5px;
@@ -153,17 +155,8 @@ i {
     margin-left: 5px;
   }
 }
-img {
-  margin-left: 20%;
-}
-
-p {
-  text-align: center;
-  color: white;
-}
-
-.flavors {
-  margin-left: 20px;
+.img {
+  margin-left: 150px;
 }
 
 h3 {
@@ -176,16 +169,18 @@ h3 {
   display: flex;
   width: 90%;
   height: 400px;
-  background-color: darkgrey;
+  background-color: darkorange;
   margin-top: 100px;
   margin-left: 4%;
+  border-radius: 18%;
+  justify-content: center;
 }
 
 .modal {
   display: none;
   position: absolute;
   z-index: 1;
-  width: 500px;
+  width: 400px;
   height: 300px;
   overflow: auto;
   background-color: lightsteelblue;
@@ -194,9 +189,33 @@ h3 {
 .modal-content {
   font-weight: bold;
   font-family: "Courier New", serif;
+  align-content: center;
+  text-align: center;
+  margin-top: 30px;
 }
 
 .close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close2 {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close3 {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close4 {
   color: white;
   float: right;
   font-size: 28px;
@@ -210,23 +229,54 @@ h3 {
   cursor: pointer;
 }
 
+.close2:hover,
+.close2:focus {
+  color: darkorange;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close3:hover,
+.close3:focus {
+  color: darkorange;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close4:hover,
+.close4:focus {
+  color: darkorange;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .button {
-  margin-left: 50%;
-  background-color: darkorange;
+  margin-left: 32%;
+  background-color: gray;
   color: white;
   border-radius: 50%;
   margin-top: 10px;
+  display: inline-block;
 }
 
 form {
   margin-top: 100px;
   margin-left: 40%;
+  color: white;
 }
 
 input {
   width: 300px;
   height: 20px;
   margin-bottom: 10px;
+}
+
+.sub {
+  color: white;
+  background-color: darkorange;
+  border-radius: 40%;
+  width: 80px;
+  margin-left: 100px;
 }
 
 footer {
@@ -241,14 +291,15 @@ footer {
 .fa {
   padding: 20px;
   font-size: 10px;
-  width: 30px;
+  width: 50px;
+  height: 25px;
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
   display: block;
   justify-content: space-evenly;
-  margin-left: 20%;
-  margin-top: 15px;
+  margin-left: 18%;
+  margin-top: 4%;
 }
 
 .fa-twitter {

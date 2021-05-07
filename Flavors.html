@@ -11,11 +11,12 @@
     <nav>
         <a href="Home.html">Home<i class="fas fa-home"></i></a>
         <a href="About.html">About<i class="fas fa-question-circle"></i></a>
-        <a href="Flavors.html">Flavors<i class="fas fa-ice-cream"></i></a>
+        <a href="Flavors.html" class="active">Flavors<i class="fas fa-ice-cream"></i></a>
         <a href="Contact.html">Contact<i class="fas fa-address-book"></i></a>
     </nav><br>
+    <h1>Flavor Emporium</h1>
     <div class="div">
-        <div class="flavors">
+        <div>
             <h3>Flavor: Blue</h3>
             <img src="flavorImages/icecream1.jpg" alt="blue" width="200" height="200">
             <button class="button" id="myBtn">Cost</button>
@@ -24,67 +25,130 @@
                     <span class="close">&times;</span>
                     <img src="flavorImages/icecream1.jpg" alt="blue" width="200" height="200">
                     <p>Cost: $1.99</p>
+                    <script>
+                        var modal = document.getElementById("myModal");
+
+                        var btn = document.getElementById("myBtn");
+
+                        var span = document.getElementsByClassName("close")[0];
+
+                        btn.onclick = function() {
+                            modal.style.display = "block";
+                        }
+
+                        span.onclick = function() {
+                            modal.style.display = "none";
+                        }
+
+                        window.onclick = function(event) {
+                            if (event.target == modal) {
+                                modal.style.display = "none";
+                            }
+                        }
+                    </script>
                 </div>
             </div>
         </div>
-        <div class="flavors">
+        <div>
             <h3>Flavor: Chocolate</h3>
             <img src="flavorImages/icecream2.jpg" alt="chocolate" width="200" height="200">
-            <button class="button" id="myBtn">Cost</button>
-            <div id="myModal" class="modal">
+            <button class="button" id="myBtn2">Cost</button>
+            <div id="myModal2" class="modal">
                 <div class="modal-content">
-                    <span class="close">&times;</span>
+                    <span class="close2">&times;</span>
                     <img src="flavorImages/icecream2.jpg" alt="chocolate" width="200" height="200">
                     <p>Cost: $2.99</p>
+                    <script>
+                        var modal2 = document.getElementById("myModal2");
+
+                        var btn2 = document.getElementById("myBtn2");
+
+                        var span2 = document.getElementsByClassName("close2")[0];
+
+                        btn2.onclick = function() {
+                            modal2.style.display = "block";
+                        }
+
+                        span2.onclick = function() {
+                            modal2.style.display = "none";
+                        }
+
+                        window.onclick = function(event) {
+                            if (event.target == modal2) {
+                                modal2.style.display = "none";
+                            }
+                        }
+                    </script>
                 </div>
             </div>
         </div>
-        <div class="flavors">
+        <div>
             <h3>Flavor: Vanilla</h3>
             <img src="flavorImages/icecream3.jpg" alt="vanilla" width="200" height="200">
-            <button class="button" id="myBtn">Cost</button>
-            <div id="myModal" class="modal">
+            <button class="button" id="myBtn3">Cost</button>
+            <div id="myModal3" class="modal">
                 <div class="modal-content">
-                    <span class="close">&times;</span>
+                    <span class="close3">&times;</span>
                     <img src="flavorImages/icecream3.jpg" alt="vanilla" width="200" height="200">
                     <p>Cost: $1.99</p>
+                    <script>
+                        var modal3 = document.getElementById("myModal3");
+
+                        var btn3 = document.getElementById("myBtn3");
+
+                        var span3 = document.getElementsByClassName("close3")[0];
+
+                        btn3.onclick = function() {
+                            modal3.style.display = "block";
+                        }
+
+                        span3.onclick = function() {
+                            modal3.style.display = "none";
+                        }
+
+                        window.onclick = function(event) {
+                            if (event.target == modal3) {
+                                modal3.style.display = "none";
+                            }
+                        }
+                    </script>
                 </div>
             </div>
         </div>
-        <div class="flavors">
+        <div>
             <h3>Flavor: The Trio</h3>
             <img src="flavorImages/icecream4.jpg" alt="trio" width="200" height="200">
-            <button class="button" id="myBtn">Cost</button>
-            <div id="myModal" class="modal">
+            <button class="button" id="myBtn4">Cost</button>
+            <div id="myModal4" class="modal">
                 <div class="modal-content">
-                    <span class="close">&times;</span>
+                    <span class="close4">&times;</span>
                     <img src="flavorImages/icecream4.jpg" alt="trio" width="200" height="200">
                     <p>Cost: $3.99</p>
+                    <script>
+                        var modal4 = document.getElementById("myModal4");
+
+                        var btn4 = document.getElementById("myBtn4");
+
+                        var span4 = document.getElementsByClassName("close4")[0];
+
+                        btn4.onclick = function() {
+                            modal4.style.display = "block";
+                        }
+
+                        span4.onclick = function() {
+                            modal4.style.display = "none";
+                        }
+
+                        window.onclick = function(event) {
+                            if (event.target == modal4) {
+                                modal4.style.display = "none";
+                            }
+                        }
+                    </script>
                 </div>
             </div>
         </div>
     </div>
-    <script>
-        var modal = document.getElementById("myModal");
-
-        var btn = document.getElementById("myBtn");
-
-        var span = document.getElementsByClassName("close")[0];
-
-        btn.onclick = function() {
-            modal.style.display = "block";
-        }
-
-        span.onclick = function() {
-            modal.style.display = "none";
-        }
-
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-    </script>
 </body>
 <footer>
     <a href="https://twitter.com" class="fa fa-twitter"></a>
